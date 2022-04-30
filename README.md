@@ -1,2 +1,2 @@
 # Algoritmy-I
-VŠB Algoritmy I, ZS2022
+VŠB Algoritmy I, LS2022
