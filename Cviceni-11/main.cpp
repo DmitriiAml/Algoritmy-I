@@ -13,19 +13,19 @@ int main()
 	const int iterationsCount = 100; 
 
 	srand(time(NULL));
-	int IdToFind = rand() % arrSize;					// ziskame randomove cislo bunky
+	int IdToFind = rand() % arrSize;		   // ziskame randomove cislo bunky
 	cout << "ID to Find: " << IdToFind << endl; 	   //  ve kterem je ulozeno cislo pro priklad
 
 	/*
 	SearchContainer container(arrSize, maxNum);
 	container.PrintData();
 
-	int numForFind = container.GetData(IdToFind);				// Zadejte cislo bunky, abyste ziskali randomni cislo
-																// ktere se v ni nachazi pro vyhledavani v cyklech
-	cout << "Num for find: " << numForFind << endl;				// ziskame toto cislo, abychom ho nasli v cyklech
+	int numForFind = container.GetData(IdToFind);	   // Zadejte cislo bunky, abyste ziskali randomni cislo
+							   // ktere se v ni nachazi pro vyhledavani v cyklech
+	cout << "Num for find: " << numForFind << endl;	   // ziskame toto cislo, abychom ho nasli v cyklech
 	
-	auto ret = container.SearchLinear(numForFind);				// pokud se csslo bunky shoduje s tim, co jsme zadali
-	printf("Element: %s, on index %d\n", ret.first ? "found" : "not found", ret.second); // proto cyklus funguje spravne a zbyva jen zmerit cas
+	auto ret = container.SearchLinear(numForFind);	   // pokud se csslo bunky shoduje s tim, co jsme zadali
+	printf("Element: %s, on index %d\n", ret.first ? "found" : "not found", ret.second);	// proto cyklus funguje spravne a zbyva jen zmerit cas
 	*/
 
 
@@ -36,7 +36,7 @@ int main()
 	int numForFind = containerBinary.GetData(IdToFind);
 	cout << "Num for find: " << numForFind << endl;
 
-	containerBinary.SortArray();								// radim pole, ktere je nezbytnou podminkou pro provedeni binarniho vyhledavani
+	containerBinary.SortArray();	// radim pole, ktere je nezbytnou podminkou pro provedeni binarniho vyhledavani
 	//containerLinear.PrintData(); 
 
 	auto retLinear = containerBinary.SearchBinary(numForFind);
